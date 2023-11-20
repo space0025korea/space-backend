@@ -379,6 +379,8 @@ export interface ApiProjectProject extends Schema.CollectionType {
     area: Attribute.String;
     location: Attribute.String;
     photos: Attribute.Media;
+    category: Attribute.Enumeration<['living', 'commercial']> &
+      Attribute.DefaultTo<'living'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

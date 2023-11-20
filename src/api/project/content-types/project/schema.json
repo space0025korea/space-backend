@@ -29,7 +29,17 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "living",
+        "commercial"
+      ],
+      "default": "living"
     }
   }
 }
